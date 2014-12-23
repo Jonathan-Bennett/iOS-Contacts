@@ -47,5 +47,14 @@ class PeopleViewController: UITableViewController {
     return cell
   }
   
+  override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    switch editingStyle {
+    case .Delete:
+      people.removeAtIndex(indexPath.row)
+      tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    default:
+      println("wave")
+    }
+  }
   
 }
