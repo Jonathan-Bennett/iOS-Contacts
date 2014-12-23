@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="575" y="472"/>
         </scene>
-        <!--Person View Controller-->
+        <!--Title-->
         <scene sceneID="CwJ-od-xHU">
             <objects>
                 <viewController storyboardIdentifier="Person" id="O3I-Ep-eeM" customClass="PersonViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,6 +77,13 @@
                             <constraint firstItem="SEj-pP-Slo" firstAttribute="trailing" secondItem="X8D-ff-DDn" secondAttribute="trailingMargin" id="tbf-JP-l9W"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="spO-Aq-WoO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="FJh-dq-i6U">
+                            <connections>
+                                <action selector="didTapEdit" destination="O3I-Ep-eeM" id="Sno-VA-8oV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="textLabel" destination="SEj-pP-Slo" id="OBi-PU-G7g"/>
