@@ -10,13 +10,15 @@ import UIKit
 
 class PeopleViewController: UITableViewController {
   
-  let people = ["Bob", "Susan", "Joe", "Kelly"] // TODO: allow changes
+  var people = ["Bob", "Susan", "Joe", "Kelly"] // TODO: allow changes
   
   @IBAction func didTapAdd() {
     let editViewController = PersonEditViewController.fromStoryboard()
     let navViewController = UINavigationController(rootViewController: editViewController)
 
     editViewController.doneCallback = {
+      self.people.append(editViewController.name)
+      self.tableView.reloadData()
       self.dismissViewControllerAnimated(true, completion: nil)
     }
     

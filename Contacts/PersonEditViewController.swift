@@ -11,7 +11,14 @@ import UIKit
 class PersonEditViewController: UIViewController {
   
   @IBOutlet weak var nameField: UITextField!
-  var name = ""
+  var name: String {
+    get {
+      return nameField.text
+    }
+    set {
+      nameField.text = newValue
+    }
+  }
   
   var doneCallback: (Void -> Void)?
   var cancelCallback: (Void -> Void)?
