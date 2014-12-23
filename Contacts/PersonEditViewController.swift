@@ -32,6 +32,6 @@ class PersonEditViewController: UIViewController {
   }
   
   class func fromStoryboard() -> PersonEditViewController {
-    return UIStoryboard(name: "PersonEdit", bundle: nil).instantiateInitialViewController() as PersonEditViewController
+    return UIStoryboard(name: "Person", bundle: nil).instantiateViewControllerWithIdentifier("EditPerson") as PersonEditViewController
   }
 }

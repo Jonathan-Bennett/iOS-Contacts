@@ -33,6 +33,14 @@ class PeopleViewController: UITableViewController {
     parentViewController?.presentViewController(navViewController, animated: true, completion: nil)
   }
   
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let person = people[indexPath.row]
+    let personViewController = PersonViewController.fromStoryboard()
+    personViewController.name = person
+    
+    navigationController?.pushViewController(personViewController, animated: true)
+  }
+  
   // Mark - UITableViewDataSource
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return people.count
