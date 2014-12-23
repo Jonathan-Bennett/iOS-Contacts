@@ -12,6 +12,21 @@ class PeopleViewController: UITableViewController {
   
   let people = ["Bob", "Susan", "Joe", "Kelly"] // TODO: allow changes
   
+  @IBAction func didTapAdd() {
+    let editViewController = PersonEditViewController.fromStoryboard()
+    let navViewController = UINavigationController(rootViewController: editViewController)
+
+    editViewController.doneCallback = {
+      self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    editViewController.cancelCallback = {
+      self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    parentViewController?.presentViewController(navViewController, animated: true, completion: nil)
+  }
+  
   // Mark - UITableViewDataSource
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return people.count

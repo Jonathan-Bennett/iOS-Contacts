@@ -53,7 +53,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="People" id="Pb2-Je-rET">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uVc-Cn-THO"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uVc-Cn-THO">
+                            <connections>
+                                <action selector="didTapAdd" destination="IFL-ex-ZKw" id="Tol-0i-4cB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVq-lY-Wvm" userLabel="First Responder" sceneMemberID="firstResponder"/>

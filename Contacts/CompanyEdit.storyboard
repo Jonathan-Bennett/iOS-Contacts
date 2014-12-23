@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KvD-li-uwW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Company-->
+        <scene sceneID="TuO-he-JsV">
+            <objects>
+                <viewController id="KvD-li-uwW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sy9-gS-BuH"/>
+                        <viewControllerLayoutGuide type="bottom" id="smp-kg-ZUp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Eg-xW-LWY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DpZ-S2-bN8">
+                                <rect key="frame" x="16" y="129" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DpZ-S2-bN8" firstAttribute="leading" secondItem="8Eg-xW-LWY" secondAttribute="leadingMargin" id="M6F-NF-4d9"/>
+                            <constraint firstItem="DpZ-S2-bN8" firstAttribute="top" secondItem="sy9-gS-BuH" secondAttribute="bottom" constant="65" id="jXH-f5-h6s"/>
+                            <constraint firstItem="DpZ-S2-bN8" firstAttribute="trailing" secondItem="8Eg-xW-LWY" secondAttribute="trailingMargin" id="zuH-0D-IQq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Company" id="Zmz-8u-Ni7">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="to0-db-re2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3SW-np-yTg"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhZ-9U-06R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="748"/>
+        </scene>
+    </scenes>
+</document>
