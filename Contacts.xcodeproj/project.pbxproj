@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4183D51A4940F9005A338C /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 3B4183D41A4940F9005A338C /* readme.md */; };
 		3BAA0E7E1A492F0400A65DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA0E7D1A492F0400A65DF8 /* AppDelegate.swift */; };
 		3BAA0E811A492F0400A65DF8 /* Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA0E7F1A492F0400A65DF8 /* Contacts.xcdatamodeld */; };
 		3BAA0E861A492F0400A65DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAA0E841A492F0400A65DF8 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B4183D41A4940F9005A338C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		3BAA0E781A492F0400A65DF8 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAA0E7C1A492F0400A65DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BAA0E7D1A492F0400A65DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		3BAA0E6F1A492F0400A65DF8 = {
 			isa = PBXGroup;
 			children = (
+				3B4183D41A4940F9005A338C /* readme.md */,
 				3BAA0E7A1A492F0400A65DF8 /* Contacts */,
 				3BAA0E931A492F0400A65DF8 /* ContactsTests */,
 				3BAA0E791A492F0400A65DF8 /* Products */,
@@ -265,6 +268,7 @@
 				3BAA0E7E1A492F0400A65DF8 /* AppDelegate.swift in Sources */,
 				3BAA0EA31A49315200A65DF8 /* CompaniesViewController.swift in Sources */,
 				3BAA0EAC1A49347400A65DF8 /* PersonEditViewController.swift in Sources */,
+				3B4183D51A4940F9005A338C /* readme.md in Sources */,
 				3BAA0EB01A493C3100A65DF8 /* PersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +463,7 @@
 				3BAA0E9C1A492F0400A65DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BAA0E9D1A492F0400A65DF8 /* Build configuration list for PBXNativeTarget "ContactsTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +472,7 @@
 				3BAA0E9F1A492F0400A65DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
