@@ -95,7 +95,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Companies" id="m60-i6-yDk">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RBx-Ky-FGk"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RBx-Ky-FGk">
+                            <connections>
+                                <action selector="didTapAdd" destination="qlN-Yw-mqr" id="EfJ-Pg-DVv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
