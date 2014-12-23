@@ -17,9 +17,13 @@ class PeopleViewController: UITableViewController {
     let navViewController = UINavigationController(rootViewController: editViewController)
 
     editViewController.doneCallback = {
-      self.people.append(editViewController.name)
-      self.tableView.reloadData()
-      self.dismissViewControllerAnimated(true, completion: nil)
+      if editViewController.name != "" {
+        self.people.append(editViewController.name)
+        self.tableView.reloadData()
+        self.dismissViewControllerAnimated(true, completion: nil)
+      } else {
+        // TODO: display error message
+      }
     }
     
     editViewController.cancelCallback = {
