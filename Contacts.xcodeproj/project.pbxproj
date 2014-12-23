@@ -14,6 +14,8 @@
 		3BAA0E881A492F0400A65DF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAA0E871A492F0400A65DF8 /* Images.xcassets */; };
 		3BAA0E8B1A492F0400A65DF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BAA0E891A492F0400A65DF8 /* LaunchScreen.xib */; };
 		3BAA0E971A492F0400A65DF8 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA0E961A492F0400A65DF8 /* ContactsTests.swift */; };
+		3BAA0EA11A49300D00A65DF8 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA0EA01A49300D00A65DF8 /* PeopleViewController.swift */; };
+		3BAA0EA31A49315200A65DF8 /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA0EA21A49315200A65DF8 /* CompaniesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		3BAA0E901A492F0400A65DF8 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAA0E951A492F0400A65DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BAA0E961A492F0400A65DF8 /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
+		3BAA0EA01A49300D00A65DF8 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		3BAA0EA21A49315200A65DF8 /* CompaniesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				3BAA0E891A492F0400A65DF8 /* LaunchScreen.xib */,
 				3BAA0E7F1A492F0400A65DF8 /* Contacts.xcdatamodeld */,
 				3BAA0E7B1A492F0400A65DF8 /* Supporting Files */,
+				3BAA0EA01A49300D00A65DF8 /* PeopleViewController.swift */,
+				3BAA0EA21A49315200A65DF8 /* CompaniesViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BAA0E831A492F0400A65DF8 /* ViewController.swift in Sources */,
+				3BAA0EA11A49300D00A65DF8 /* PeopleViewController.swift in Sources */,
 				3BAA0E811A492F0400A65DF8 /* Contacts.xcdatamodeld in Sources */,
 				3BAA0E7E1A492F0400A65DF8 /* AppDelegate.swift in Sources */,
+				3BAA0EA31A49315200A65DF8 /* CompaniesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
